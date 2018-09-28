@@ -1,16 +1,10 @@
 extends layout
 
 block content
- //div#profile.container.full-width
-    h1 Profile
-    img(src=""+user.photos)
-    h3.text-center=user.displayName
-    pre=JSON.stringify(user)
  div(class='container searchContainer')
         div(class='search card card-body')
-            h5 Profile
+            h5.text-center Profile
             .card.text-black(style="max-width: 100%;")
-                img(src=""+user.photos style="width:100%")
-                div(class="card-body")
-                    h3.text-center=user.id
+                h3.text-center=user.id
+                    img(src=""+user.photos style="width:200px;" class="card")
                     p=JSON.stringify(user)

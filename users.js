@@ -8,7 +8,6 @@ module.exports = function(io) {
   });
 };
 
-// for later
 /*
 var users = {};
 var messages = [];
