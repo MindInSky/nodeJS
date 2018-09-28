@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    .container.card
+        h1= title
+        p Welcome to #{title}
+        form(id="from-group" style="align-items:center")
+            label(for="textArea")
+            .card.bg-success.text-white.mb-3(style="max-width: 100%; heigth:200px") 
+                .card-header Chat top is this
+                .card-body.bg-warning(style="")
+                    ul#messageList
+                .search
+                    #messageOut
+                        div(class="modal-footer")
+                         input(type="text" class="form-control" id="msgInput"   placeholder="Write a message")
+                         button(type="submit"  class="btn btn-danger" id="btnMessage" style="font-size:12px") Send
